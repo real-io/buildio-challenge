@@ -1,10 +1,6 @@
 .title {
   margin-bottom: 1rem;
-}
-
-.main {
-  display: flex;
-  justify-content: center;
+  color: white;
 }
 
 .search {
@@ -20,7 +16,7 @@
 .search_btn {
   padding: 1rem;
   border: none;
-  background-color: green;
+  background-color: #662C91;
   color: white;
   cursor: pointer;
 }

@@ -3,7 +3,6 @@ import Weekday from "../../constants/Weekday";
 import styles from "./Forecast.module.scss";
 import ForecastBackground from "../ForecastBackground";
 import Title from "../Title";
-import Text from "../Text";
 import ForecastDay from "../ForecastDay";
 import WeatherIcon from "../WeatherIcon";
 import Units from "../../constants/Units";
@@ -137,7 +136,7 @@ const Forecast = (props: ForecastProps) => {
           <WeatherIcon
             addClassName={styles.weather_icon}
             icon={today?.weather[0]?.icon}
-            size={"5x"}
+            size="5x"
             color="white"
           />
           <div className={styles.unit_system_select}>
