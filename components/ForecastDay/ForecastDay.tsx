@@ -12,8 +12,12 @@ interface ForecastDayProps {
   showContent: boolean;
   unitSystem: string;
 }
-
 const ForecastDay = (props: ForecastDayProps) => {
+
+  /**
+   * 
+   * @returns The next forecast step ( 3 hour basis intervals)
+   */
   const getCurrentForecast = () => {
     const currentTime = new Date();
     for (let forecast of props.forecasts) {

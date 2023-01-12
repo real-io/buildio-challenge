@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Weekday from "../../constants/Weekday";
 import styles from "./Forecast.module.scss";
-import ForecastBackground from "../ForecastBackground";
 import Title from "../Title";
 import ForecastDay from "../ForecastDay";
 import WeatherIcon from "../WeatherIcon";
@@ -112,8 +111,7 @@ const Forecast = (props: ForecastProps) => {
   const today = getCurrentStepByDay(currentWeekday);
   return (
     <section className={styles.wrapper}>
-      <ForecastBackground>
-        <div></div>
+      <div className={styles.forecast}>
         <div className={styles.city_weather}>
           <Title
             addClassName={styles.city_name}
@@ -161,7 +159,7 @@ const Forecast = (props: ForecastProps) => {
             );
           })}
         </ul>
-      </ForecastBackground>
+      </div>
     </section>
   );
 };
