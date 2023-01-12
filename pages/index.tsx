@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
 import styles from "./../styles/Home.module.scss";
-import Container from "../components/Container/Container";
 
 export default function Home() {
   const router = useRouter();

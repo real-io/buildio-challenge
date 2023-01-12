@@ -68,7 +68,7 @@ const ForecastDay = (props: ForecastDayProps) => {
               <div className={styles.forecast_step} key={index}>
                 <Text
                   content={`${convertTemperature(
-                    currentForecast?.main.temp_max,
+                    step?.main.temp_max,
                     props.unitSystem
                   )} ${props.unitSystem === Units.METRIC ? "C" : "F"}\u00B0`}
                 />
