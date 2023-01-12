@@ -18,6 +18,8 @@ First route should render a simple search input for your zip code. If successful
 ## Getting Started
 
 ### Installation
+Development was made using node version ``v14.19.1``
+
 Run the command ```npm i```
 
 ### Storybook
