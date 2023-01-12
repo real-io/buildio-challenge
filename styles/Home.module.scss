@@ -1,11 +1,26 @@
-
+.title {
+  margin-bottom: 1rem;
+}
 
 .main {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .search {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+
+  input {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.search_btn {
+  padding: 1rem;
+  border: none;
+  background-color: green;
+  color: white;
+  cursor: pointer;
 }

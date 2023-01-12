@@ -16,17 +16,19 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-        <div>
-          <h1>Find my Forecast App!</h1>
-          <div className={styles.search}>
-            <input
-              onChange={handleOnChange}
-              value={zipCode}
-              placeholder="Type a zipcode"
-            ></input>
-            <button onClick={handleOnClick}>Get Weather</button>
-          </div>
+      <div>
+        <h1 className={styles.title}>Find my Weather Forecast!</h1>
+        <div className={styles.search}>
+          <input
+            onChange={handleOnChange}
+            value={zipCode}
+            placeholder="Type a zipcode"
+          ></input>
+          <button className={styles.search_btn} onClick={handleOnClick}>
+            Get Weather
+          </button>
         </div>
+      </div>
     </main>
   );
 }
