@@ -26,8 +26,6 @@ const ForecastDay = (props: ForecastDayProps) => {
 
   const currentForecast = getCurrentForecast();
 
-  console.log({ forecasts: props.forecasts });
-
   return (
     <div>
       <div className={styles.day}>
